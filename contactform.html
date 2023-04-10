@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contactform</title>
+        <style>
+            #container{
+                height: 430px;
+                width: 480px;
+                border: 1px solid black;
+                margin: auto;
+                margin-top: 50px;
+                background-color: whitesmoke;
+                border-radius: 8px;
+            }
+          ol{
+           padding: 10px;
+           margin-left: 30px;
+          }
+          input{
+            height: 30px;
+            width: 220px;
+            border: 1px solid black;
+          }
+          label{
+            font-size: 20px;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <ol>
+                <label for="username">Username</label>
+                <input type="uname"  id="uname" name="uname"style="margin-left: 50px;">
+            </ol>
+            <ol>
+                <label for="mailid">Email Address</label>
+                <input type="email" id="email"name="mailid" style="margin-left: 15px;">
+            </ol>
+            <ol>
+                <label for="phonenum">PhoneNum</label>
+                <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}"required style="margin-left: 40px;">
+            </ol>  
+            <ol>
+                <label for="time">Time to contact</label>
+                <input type="time" id="time" name="time"style="margin-left:10px;">
+            </ol>
+            <ol>
+                <label for="text">Message</label>
+                <input type="text" id="text" name="text" style="margin-left:68px;">
+            </ol>
+            <ol>
+                <input type="submit" style="margin-left: 100px;height:40px;width: 140px;background-color: red;font-size: 25px;" >
+            </ol>
+            </form>
+
+        </div>
+    </body>
+</html>
